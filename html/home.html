@@ -1,5 +1,110 @@
-<html>
+   <html>
 
-<!--This is page where Authorised users will be redirected on successful Login-->
+<!--
+* This is Our Login Page.. 
+* having name 'index.html' will open it automatically onclick of OurEmployees folder in localhost
+-->
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link  href ="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link  href ="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="js/index.js" type="text/javascript" ></script>
+	<link href="css/index.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    
+
+</head>
+<body>
+                                            <!--Pop Up Container start-->
+    <div id="popUpContainer">
+    <li class=" fa fa-arrow-left fa-4x" title="Go Back" id="closeContainer"></li>
+    </div>                        
+    
+                                            <!--Pop Up Container start-->
+    
+                                            <!--My profile Div Start-->
+    
+    <div id="divMyProfile">
+        <h3>My Profile</h3>
+    </div>
+    
+                                            <!--My profile Div End-->
+    
+    <div class="title-bar">
+        <img src="images/favicon1.png" id="imgFavicon">
+        <h1>Employee Database</h1>
+    </div>
+                                            <!--Row for mesage and Sign Out Button Start-->
+    <div class="row">
+        <div class="col-md-12" style="padding:5px;">
+            <div style="text-align:right;">
+                <span>Hi message</span>
+                <button class="btn btn-danger ">Sign Out</button>
+            </div>
+        </div>
+    </div>
+                                            <!--Row for mesage and Sign Out Button End-->
+    
+    <hr class="content_divider">
+                                            <!--Row for Search Box and two Buttons Button Start-->
+    <div class="row">
+        <div class="col-md-8">
+            <form id="" name="" action="">
+            <span class="search">Search </span>
+            <input id="searchBox" name="searchBox" autofocus>
+            <button class="btn btn-primary pull-right">GO</button>
+            </form>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="row">
+                <button class="btn btn-success" id="bottonViewAll" name="bottonViewAll">View All Employees</button>
+                <button class="btn btn-primary" id="bottonMyProfile" name="bottonMyProfile">My Profile</button>
+            </div>
+        </div>
+    </div>
+                                            <!--Row for Search Box and two Buttons Button End-->
+
+        <hr class="content_divider">
+                                            <!--Row for Admin Panel Start-->
+    <div class="row">
+        <div class="col-md-12" style="border:solid 1px red;">
+            
+            <div id="tab-links">
+                <ul>
+                    <li><a href="#addEmployee" title="click to Add New Employee">Add Employee</a></li>
+                    <li><a href="#addDepartment" title="click to Add New Department">Add Department</a></li>
+                </ul>
+            </div>
+        
+            <div id="tabs">
+                <div id="addEmployee">
+                    <h3>Form for Add Employee</h3>
+                    <span> Click on tab agian to cancel</span>
+                </div>
+                
+                <div id="addDepartment"> 
+                    <h3>Form for Add Department</h3>
+                    <span> Click on tab again to cancel</span>
+                </div>
+            </div>
+            
+        </div>  
+    </div>
+                                            <!--Row for Admin Panel End-->
+    
+                                             <!--Row for Displaying Search result Start-->
+    
+     <div class="row">
+         <div class="col-md-12" style="border:solid 1px blue;">
+             <h3>Display Search result here</h3>                                     <!--add searched result here-->
+         </div>
+    </div>
+        
+                                                <!--Row for Displaying Search result End-->
+
+
+</body>
 
 </html>
+
